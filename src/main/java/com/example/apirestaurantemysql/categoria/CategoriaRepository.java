@@ -1,4 +1,4 @@
-package com.example.apirestaurantemysql;
+package com.example.apirestaurantemysql.categoria;
 
 import org.springframework.data.repository.CrudRepository;
 

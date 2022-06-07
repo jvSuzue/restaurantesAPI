@@ -1,4 +1,4 @@
-package com.example.apirestaurantemysql;
+package com.example.apirestaurantemysql.cliente;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

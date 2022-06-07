@@ -1,4 +1,4 @@
-package com.example.apirestaurantemysql;
+package com.example.apirestaurantemysql.categoria;
 
 
 import java.util.Optional;
