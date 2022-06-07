@@ -56,9 +56,10 @@ public class ClienteController {
      @PutMapping(value = "{id}")
      public ResponseEntity<Object> alterarCliente(@PathVariable Integer id,
      @RequestBody Cliente cliente){
-         Optional<Cliente> cli = clienteRepository.findById(id);
+         Optional<Cliente>cli = clienteRepository.findById(id);
          if (cli.isPresent()){
              cliente.setCodigo(id);
+             clienteRepository.save(cliente);
          }else{
              clienteRepository.save(cliente);
          }

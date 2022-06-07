@@ -62,6 +62,7 @@ public class RestauranteController {
          Optional<Restaurante> res = restauranteRepository.findById(id);
          if (res.isPresent()){
             restaurante.setCodigo(id);
+            restauranteRepository.save(restaurante);
          }else{
              restauranteRepository.save(restaurante);
          }
